@@ -5,3 +5,4 @@
 - Module 4 - I completed Module 4
 - Module 5 - I completed Module 5
 - Module 6 - I completed Module 6
+- Module 7 - I completed Module 7
