@@ -1,0 +1,23 @@
+
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+
+menu = input("Choose an operation (add, minus, multiply, quit): ")
+print("menu")
+
+if menu == "add":
+    result = num1 + num2  
+elif menu == "minus":
+    result = num1 - num2
+elif menu == "multiply":
+    result = num1 * num2
+elif menu == "quit":
+    result = "you have exited the program"    
+
+print("The result is: ", result)
+
+menu = input("Choose an operation (add, minus, multiply, quit): ")
+print("menu")
+
+
+    

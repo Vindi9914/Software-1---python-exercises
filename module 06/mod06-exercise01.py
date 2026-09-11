@@ -4,6 +4,6 @@ total = 0
 
 for i in range(dice):
     roll = random.randint(1, 6)
-    total+= roll
+    total += roll
 
-print("sum of the dice:", total)    
+print("Sum of the dice:", total)    
