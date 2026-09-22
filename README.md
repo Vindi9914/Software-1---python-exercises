@@ -6,3 +6,4 @@
 - Module 5 - I completed Module 5
 - Module 6 - I completed Module 6
 - Module 7 - I completed Module 7
+- Module 8 - I completed Module 8
