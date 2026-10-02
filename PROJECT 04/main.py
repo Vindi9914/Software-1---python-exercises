@@ -33,7 +33,6 @@ while True:
 
     if player.location == "Village":
 
-        print("\n--------------------")
         print("You are in the Village.")
         
 
@@ -83,9 +82,9 @@ while True:
 
     elif player.location == "Cave":
 
-        print("\n--------------------")
+        
         print("You are in the Cave.")
-        print("--------------------")
+       
 
         print("Keys available in the Cave:", player.keys)
 
@@ -149,9 +148,8 @@ while True:
 
     elif player.location == "Forest":
 
-        print("\n--------------------")
         print("You are in the Forest.")
-        print("--------------------")
+        
 
         print("There are bears in the Forest!")
 
@@ -187,9 +185,9 @@ while True:
 
     elif player.location == "Palace":
 
-        print("\n--------------------")
+        
         print("You are in the Palace.")
-        print("--------------------")
+    
 
         # Sword has not been collected yet
         if player.has_sword is False:
