@@ -1,3 +1,4 @@
+import random
 class Car:
     def __init__(self, license_plate, maximum_speed):
         self.license_plate = license_plate
