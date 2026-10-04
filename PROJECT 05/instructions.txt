@@ -1,0 +1,17 @@
+GAME INSTRUCTIONS
+
+1. Start the game in the Village.
+2. Pick apples in the Village.
+3. Collect 100 apples to get one key and it will appear in the cave.
+4. You can return to the Village and continue picking apples.
+5. There are 5 keys in total.
+6. Enter the cave and take a key.
+7. Go through the Forest.
+8. Escape from the bears.
+9. If you successfully escape, go to the Palace.
+10. Use the key to open the Palace door.
+11. Take the sword and become a Warrior.
+12. Defeat enemies using the sword.
+13. A diamond appears after defeating an enemy.
+14. Collect 5 diamonds to win the game.
+

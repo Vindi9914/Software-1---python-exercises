@@ -1,0 +1,20 @@
+Welcome to the Adventure Game!
+
+You are a player in a village.
+
+Your first task is to pick apples in the Village.
+Every time you collect 100 apples, a key appear in the cave.
+There are 5 keys in total.
+
+After getting a key, you must escape through the Forest.
+There are bears in the forest.
+
+If you successfully escape from the bears, you can reach the Palace.
+Use your key to open the Palace door and take the sword.
+Then you become a Warrior.
+
+As a Warrior, you must defeat enemies.
+When you defeat an enemy, a diamond appears.
+Collect 5 diamonds to become the winner!
+
+Good luck!
