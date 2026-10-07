@@ -5,20 +5,14 @@ class Elevator:
         self.current_floor = bottom_floor
 
     def floor_up(self):
-        if self.current_floor < self.top_floor:
-            self.current_floor += 1
+        self.current_floor += 1
         print("Elevator is now on floor", self.current_floor)
 
     def floor_down(self):
-        if self.current_floor > self.bottom_floor:
-            self.current_floor -= 1
+        self.current_floor -= 1
         print("Elevator is now on floor", self.current_floor)
 
     def go_to_floor(self, floor):
-        if floor < self.bottom_floor or floor > self.top_floor:
-            print("That floor is not in this building.")
-            return
-
         while self.current_floor < floor:
             self.floor_up()
 
@@ -27,17 +21,17 @@ class Elevator:
 
 
 class Building:
-    def __init__(self, bottom_floor, top_floor, elevator_count):
+    def __init__(self, bottom_floor, top_floor, elevator):
         self.bottom_floor = bottom_floor
         self.top_floor = top_floor
         self.elevators = []
 
-        for _ in range(elevator_count):
+        for i in range(elevator):
             self.elevators.append(Elevator(bottom_floor, top_floor))
 
-    def run_elevator(self, elevator_number, destination_floor):
-        if elevator_number < 0 or elevator_number >= len(self.elevators):
-            print("Invalid elevator number.")
-            return
+    def run_elevator(self, elevator, destination_floor):
+        self.elevators[elevator].go_to_floor(destination_floor)
 
-        self.elevators[elevator_number].go_to_floor(destination_floor)
+    def fire_alarm(self):
+        for elevator in self.elevators:
+            elevator.go_to_floor(self.bottom_floor)
