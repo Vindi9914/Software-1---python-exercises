@@ -10,14 +10,14 @@ SAVE_FILE = "savegame.txt"
 
 def read_file(filename):
     try:
-        with open(filename, "r", encoding="utf-8") as file:
+        with open(filename, "r") as file:  
             return file.read()
     except FileNotFoundError:
         return ""
 
 
 def save_game(player):
-    with open(SAVE_FILE, "w", encoding="utf-8") as file:
+    with open(SAVE_FILE, "w") as file:
         file.write(f"name={player.name}\n")
         file.write(f"age={player.age}\n")
         file.write(f"location={player.location}\n")
@@ -31,7 +31,7 @@ def save_game(player):
 
 def load_game(player_name):
     try:
-        with open(SAVE_FILE, "r", encoding="utf-8") as file:
+        with open(SAVE_FILE, "r") as file:
             data = {}
 
             for line in file:
@@ -413,4 +413,4 @@ while True:
 
             else:
 
-                print("\nInvalid choice.")
+                print("\nInvalid choice.") 
