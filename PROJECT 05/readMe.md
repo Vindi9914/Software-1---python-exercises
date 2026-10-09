@@ -1,99 +1,81 @@
-# Game Project
+# Guardians of the Green World
+
+## Game Idea
+
+Guardians of the Green World is a text-based adventure game written in Python. The player begins in a village, travels through a cave, and chooses one of two routes: the Forest Path or the Meadow Path. Both routes lead to a Palace where the player can find a sword, become a Warrior, and fight enemies and save the world.
+
+
+
+## Objective
+
+The main objective is to reach the Palace, obtain the sword, defeat enemies, and collect five diamonds. The player wins after collecting five diamonds.
+
+To reach the Palace safely, the player must choose how to escape from a bear on the Forest Path or a snake on the Meadow Path.
+
+## How the Game Works
+
+1. The player enters a name and age.
+2. If a saved game exists for that name, the player can choose to continue it.
+3. The player starts in the Village and collects apples.
+4. Each apple-picking action adds 100 apples and makes a key available in the Cave, up to a maximum of five keys.
+5. The player takes a key in the Cave and chooses the Forest Path or Meadow Path.
+6. On the Forest Path, the player encounters a bear and must choose a safe way to escape.
+7. On the Meadow Path, the player encounters a snake and must choose a safe way to move away.
+8. After successfully escaping, the player can continue to the Palace.
+9. At the Palace, the player uses the key to open the door and obtain a sword.
+10. The player becomes a Warrior and can fight enemies. Each defeated enemy gives one diamond.
+11. The player wins after collecting five diamonds.
+12. The player can save progress and exit, then load the saved game later.
+
+## Alternative Routes
+
+The game offers two routes from the Cave to the Palace:
+
+* **Forest Path:** The player encounters a bear. Choosing to escape quietly through the trees allows the player to continue to the Palace. Trying to run past the bear does not succeed.
+* **Meadow Path:** The player encounters a snake. Slowly moving away from the snake allows the player to continue to the Palace. Trying to step past the snake does not succeed.
+
+The player can return to the Cave from either route. Before obtaining the sword, the player can also return from the Palace to either path.
+
+Both routes offer different challenges but lead toward the same main objective.
+
+## Functionalities
+
+* Command-line interface with menus and a main game loop.
+* Player name and age input.
+* Age restriction for players aged 13 and over.
+* Separate `Player`, `Room`, and `Item` classes.
+* Four item types: apple, key, sword, and diamond.
+* Five locations: Village, Cave, Forest, Meadow, and Palace.
+* Two alternative routes with different animal encounters.
+* Choices that determine whether the player can escape an animal.
+* Player status display.
+* Saving and loading player progress using `savegame.txt`.
+* Winning condition based on collecting five diamonds.
+* Input validation for menu choices.
+
+
+## Age Rating
+
+The game is intended for players aged **13 and over**. Players aged 12 or younger cannot continue past the age check.
 
 ## Project Structure
 
-The game is divided into separate Python modules.
+* `main.py` - controls the menus, game loop, routes, rules, and save/load functions.
+* `player.py` - defines the `Player` class and stores the player's progress.
+* `room.py` - defines the `Room` class and the locations.
+* `item.py` - defines the `Item` class and the game's items.
+* `intro.txt` - contains the story introduction.
+* `instructions.txt` - explains how to play.
+* `savegame.txt` - stores the current saved game when the game is played.
+* `main_backup.py` - backup copy of the original main game file, if retained.
 
-* `main.py` contains the main game program and controls the game flow.
-* `player.py` contains the `Player` class.
-* `room.py` contains the `Room` class.
-* `item.py` contains the `Item` class.
 
-## Classes
+## Comments and Code Structure
 
-### Player
+The code is organised into classes, functions, and clearly labelled sections to keep related tasks together. Comments explain important parts of the program, including file handling, the main game loop, route choices, and the winning condition.
 
-The Player class has:
+## Saving and Loading
 
-* name
-* age
-* location
-* apples
-* keys
-* diamonds
-* sword status
-* warrior status
-* forest completion status
+Choose **Save and Exit** from a menu to save the player's progress. When starting the game again, enter the same player name and choose `yes` to continue the saved game.
 
-The player can:
-
-* pick apples
-* move between rooms
-* collect keys
-* escape from the Forest
-* get a sword
-* become a Warrior
-* fight enemies
-* collect diamonds
-
-### Room
-
-The Room class has:
-
-* name
-* description
-
-The game contains four rooms:
-
-* Village
-* Cave
-* Forest
-* Palace
-
-### Item
-
-The Item class has:
-
-* name
-
-The game contains four items:
-
-* Apple
-* Key
-* Sword
-* Diamond
-
-## Game Actions
-
-The player can:
-
-* pick apples in the Village
-* go to the Cave
-* collect available keys
-* go to the Forest
-* escape from the bears
-* reach the Palace
-* open the Palace door
-* collect the sword
-* become a Warrior
-* fight enemies
-* collect diamonds
-* exit the game
-
-## Game Rules
-
-* The player must be older than 12 years to play the game.
-* Each time the player picks apples, 100 apples are added.
-* Every 100 apples makes one key available in the Cave.
-* A maximum of 5 keys can be available in the Cave.
-* The player must take a key from the Cave before going to the Forest.
-* The Forest contains bears.
-* After escaping from the Forest, the player reaches the Palace.
-* The player can open the Palace door and get the sword.
-* After getting the sword, the player becomes a Warrior.
-* Each defeated enemy gives the player one diamond.
-* The player wins after collecting 5 diamonds.
-
-## Winning Condition
-
-The player wins the game when 5 diamonds have been collected.
+The `savegame.txt` file is generated while playing. It contains player-specific progress and should not normally be committed to a public repository.

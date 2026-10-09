@@ -1,17 +1,15 @@
-GAME INSTRUCTIONS
+HOW TO PLAY
 
-1. Start the game in the Village.
-2. Pick apples in the Village.
-3. Collect 100 apples to get one key and it will appear in the cave.
-4. You can return to the Village and continue picking apples.
-5. There are 5 keys in total.
-6. Enter the cave and take a key.
-7. Go through the Forest.
-8. Escape from the bears.
-9. If you successfully escape, go to the Palace.
-10. Use the key to open the Palace door.
-11. Take the sword and become a Warrior.
-12. Defeat enemies using the sword.
-13. A diamond appears after defeating an enemy.
-14. Collect 5 diamonds to win the game.
+1. Enter your name and age. This game is intended for players aged 13 and over.
+2. Start in the Village and collect apples. Each time you collect apples, you get 100 apples 
+and one key becomes available, up to five keys.
+3. Visit the Cave and take a key.
+4. Choose one of two routes:
+   * Forest Path: choose to escape quietly through the trees to avoid the bear and reach the Palace.
+   * Meadow Path: choose to move away slowly to avoid the snake and reach the Palace.
+
+5. At the Palace, use your key to open the door and collect the sword.
+6. Become a Warrior and fight enemies to collect diamonds.
+7. Collect five diamonds to win the adventure.
+8. Use the Save and Exit option to save your progress and continue later.
 
